@@ -1,3 +1,6 @@
+const services = document.querySelector(".services > .container .row");
+const portfolio = document.querySelector(".portfolio > .container .row");
+
 const servicesObject = [
   {
     icon: "icon-activity",
@@ -135,10 +138,6 @@ const teamObject = [
   },
 ]
 
-
-
-const services = document.querySelector(".services > .container .row");
-console.log(services);
 const servicesDoc = (arr) => {
   arr.forEach((item) => {
     const { icon, title, subtitle } = item;
@@ -157,3 +156,24 @@ const servicesDoc = (arr) => {
   });
 };
 servicesDoc(servicesObject);
+
+const filterDoc = (arr) => {
+  const filter = arr.filter(item => {
+    const { img, title, subtitle } = item
+    return portfolio.innerHTML += `
+    <div class="col-4">
+            <article class="portfolio__item">
+              <div class="top">
+                <img src="${img}" class="img-responsive" alt="${title}" />
+              </div>
+              <div class="bottom">
+                <h2>${title}</h2>
+                <p>${subtitle}</p>
+              </div>
+            </article>
+          </div>
+    `
+    return filter
+  })
+}
+filterDoc(filterPortfolio);

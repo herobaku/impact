@@ -51,15 +51,15 @@
         <a href="#" class="logo">Impact<span class="logo__dot">.</span>
         </a>
         <ul class="menu d-flex gap-4">
-          <li class="menu__item active"><a href="#" class="menu__link">Home</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Team</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+          <li class="menu__item active"><a href="#hero" class="menu__link">Home</a></li>
+          <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+          <li class="menu__item"><a href="#services" class="menu__link">Services</a></li>
+          <li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
+          <li class="menu__item"><a href="#team" class="menu__link">Team</a></li>
+          <li class="menu__item"><a href="#blog" class="menu__link">Blog</a></li>
           <li class="menu__item d-flex align-items-center"><a href="#" class="menu__link">Drop Down <i
                 class="icon-arrow"></i> </a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+          <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -190,19 +190,62 @@
         <div class="row"></div>
       </div>
     </section>
-    <section id="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="section__header">
         <h2 class="section__header-title">Portfolio</h2>
         <p class="section__header-subtitle">Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum
           enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
       </div>
-      
+      <nav class="filter-nav">
+        <div class="container">
+          <div class="d-flex mb-4 justify-content-center align-items-center">
+            <button class="filter active all">All</button>
+            <button class="filter app">App</button>
+            <button class="filter product">Product</button>
+            <button class="filter brand">Branding</button>
+            <button class="filter books">Books</button>
+          </div>
+      </nav>
+      </div>
+      <div class="container">
+        <div class="row"></div>
+      </div>
     </section>
-    <section id="team">
+    <section id="team" class="team">
       <div class="section__header">
         <h2 class="section__header-title">Our Team</h2>
         <p class="section__header-subtitle">Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil
           id ratione ea sunt quis dolorem dolore earum</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <article class="article">
+              <div class="team__item">
+                <div class="team__item-top">
+                  <img src="./img/team/team-1.jpg" alt="team" class="img-responsive">
+                </div>
+                <div class="team__item-bottom">
+                  <h2>Walter White</h2>
+                  <p>Web Development</p>
+                  <div class="d-flex align-items-center justify-content-between team__item-bottom-list">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i
+                        class="icon-twitter"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i
+                        class="icon-facebook"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i
+                        class="icon-instagram"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i
+                        class="icon-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-3"></div>
+          <div class="col-3"></div>
+          <div class="col-3"></div>
+        </div>
       </div>
     </section>
     <section class="pricing">
